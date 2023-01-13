@@ -1,3 +1,4 @@
+<?php
 function getAvgColor($image) {
     $img = imagecreatefromstring(file_get_contents($image));
     $width = imagesx($img);
@@ -8,3 +9,4 @@ function getAvgColor($image) {
     $color = imagecolorsforindex($pixel, $rgb);
     return sprintf('#%02x%02x%02x', $color['red'], $color['green'], $color['blue']);
 }
+?>
