@@ -14,6 +14,23 @@ $avgColor = getAvgColor('path/to/image.<any image extension>');
 ```
 3. The function will return the average color of the image as a hex value, for example: `#ff0000`
 
+## Basic example
+```php
+<?php
+require_once('imgextractor.php');
+$img_url ="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg";
+?>
+
+<body>
+    <img src=<?php echo $url; ?>>
+    <style>
+        body {
+            background-color: <?php echo getAvgColor($img_url) ?>;
+        }
+    </style>
+</body>
+```
+
 ## Note
 Keep in mind that this function will return the average color of an image, not the main color. Also it's a simple implementation, it may not be the best solution for all cases.
 
