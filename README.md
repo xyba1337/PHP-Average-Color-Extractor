@@ -1,6 +1,6 @@
 # Image Average Color Extractor
 
-A simple PHP function that uses the GD library to extract the average color of an image.
+A simple, lightweight and fast PHP function that uses the GD library to extract the average color of an image.
 
 ## How to use
 
@@ -10,7 +10,7 @@ require_once 'imgextractor.php';
 ```
 2. Call the function by passing the path to the image file as the argument:
 ```php
-$avgColor = getAvgColor('path/to/image.jpg/webp/png...');
+$avgColor = getAvgColor('path/to/image.<any image extension>');
 ```
 3. The function will return the average color of the image as a hex value, for example: `#ff0000`
 
