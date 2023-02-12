@@ -22,7 +22,7 @@ $img_url ="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg";
 ?>
 
 <body>
-    <img src=<?php echo $url; ?>>
+    <img src=<?php echo $img_url; ?>>
     <style>
         body {
             background-color: <?php echo getAvgColor($img_url) ?>;
